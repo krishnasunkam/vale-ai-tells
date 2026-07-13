@@ -1,0 +1,7 @@
+extends: existence
+message: "Passive voice '%s': name who does the verb."
+level: suggestion
+ignorecase: true
+raw:
+  - '\b(?:is|are|was|were|be|been|being)\s+(?:\w+ly\s+)?'
+  - '(?:\w+ed|done|made|given|taken|shown|known|seen|held|kept|built|sent|found)\b'

@@ -1,0 +1,8 @@
+extends: existence
+message: "'not just X, but Y' escalation: say Y."
+level: suggestion
+ignorecase: true
+raw:
+  - '\bnot\s+(?:just|only|merely)\b[^.!?]{0,80}\b(?:but|it[''’]?s)\b'
+  - '|\bit[''’]?s\s+not\b[^.!?]{0,60},\s*it[''’]?s\b'
+  - '|\bisn[''’]?t\s+(?:just|only)\b[^.!?]{0,60}\bit[''’]?s\b'

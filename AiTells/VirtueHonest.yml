@@ -1,0 +1,9 @@
+extends: existence
+message: "Claimed honesty '%s': cut the claim and state the thing plainly."
+level: suggestion
+ignorecase: true
+raw:
+  - '\bhonest\s+(?:update|read|take|answer|assessment|truth|conversation|look|appraisal|opinion|reflection|reaction|note|word)\b'
+  - '|\b(?:to be|being|let me be|i[''’]?ll be|if i[''’]?m being)\s+honest\b'
+  - '|\bin all honesty\b'
+  - '|\bhonestly\s+speaking\b'

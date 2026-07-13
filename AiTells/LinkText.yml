@@ -1,0 +1,8 @@
+extends: existence
+message: "Vague link text '%s': describe the destination."
+level: suggestion
+ignorecase: true
+tokens:
+  - 'click here'
+  - 'read more'
+  - 'this (?:document|article|page|link)'

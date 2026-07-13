@@ -1,0 +1,29 @@
+name: vale
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Vale
+        run: |
+          VALE_VERSION=3.15.1
+          curl -sfL "https://github.com/errata-ai/vale/releases/download/v${VALE_VERSION}/vale_${VALE_VERSION}_Linux_64-bit.tar.gz" -o vale.tar.gz
+          tar -xzf vale.tar.gz vale
+          sudo mv vale /usr/local/bin/
+          vale --version
+
+      - name: Rule fixtures must stay green
+        run: python3 tests/run_tests.py
+
+      - name: Mini-bench must hold recall and zero false fires
+        run: python3 bench/score.py
+
+      - name: Our own docs must pass our own linter
+        run: vale README.md CONTRIBUTING.md

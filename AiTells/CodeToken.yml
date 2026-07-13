@@ -1,0 +1,6 @@
+extends: existence
+message: "Code-like token '%s' in prose: use a human name, not a CONSTANT or formula."
+level: error
+raw:
+  - '\b[A-Z][A-Z0-9]{2,}(?:_[A-Z0-9]+)+\b'
+  - '|\b[A-Z]\s*[×x*]\s*[A-Z]\b'

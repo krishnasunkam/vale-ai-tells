@@ -1,0 +1,6 @@
+extends: existence
+message: "Status bracket '%s': keep grades in a source-notes block, not inline prose."
+level: error
+ignorecase: true
+raw:
+  - '\[[^\]]{0,60}(?:GREEN|AMBER|RED)[^\]]{0,15}\]'

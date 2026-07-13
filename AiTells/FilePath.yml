@@ -1,0 +1,8 @@
+extends: existence
+message: "Raw file path '%s' in prose: name the document by its human title."
+level: error
+ignorecase: true
+raw:
+  - '\b[\w.-]+/[\w./-]*\.(?:md|html?|py|json|pptx|docx|xlsx|csv|txt|js|pdf)\b'
+  - '|\b\d{2}_[a-z_]+/'
+  - '|\b[\w-]{3,}\.(?:md|py|json|pptx|docx|xlsx)\b'

@@ -1,0 +1,12 @@
+extends: existence
+message: "Copula inflation '%s': use a plain verb."
+level: suggestion
+ignorecase: true
+tokens:
+  - 'serves as an?'
+  - 'serves as the'
+  - 'stands as an?'
+  - '(?:is|are) a testament to'
+  - 'marks a significant'
+  - 'represents a significant'
+  - 'boasts an?'

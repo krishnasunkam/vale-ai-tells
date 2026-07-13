@@ -1,0 +1,7 @@
+extends: existence
+message: "Weak duty-phrasing '%s': lead with a quantified outcome (X by Y measured Z)."
+level: suggestion
+ignorecase: true
+raw:
+  - '\b(?:responsible for|duties included|worked on|involved in|helped to'
+  - '|in charge of|tasked with|own(?:ed|s)? (?:the )?product vision)\b'

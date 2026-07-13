@@ -1,0 +1,24 @@
+{"id": "dash-flag", "text": "The launch is close — we ship on Friday.", "must_flag": "AiTells.Dash"}
+{"id": "codetoken-flag", "text": "Check MAX_RETRY_COUNT before you deploy.", "must_flag": "AiTells.CodeToken"}
+{"id": "formula-flag", "text": "The risk score is L × S.", "must_flag": "AiTells.CodeToken"}
+{"id": "filepath-flag", "text": "The steps live in docs/setup.md.", "must_flag": "AiTells.FilePath"}
+{"id": "statusbracket-flag", "text": "The migration is [ON TRACK, GREEN].", "must_flag": "AiTells.StatusBracket"}
+{"id": "sectioncode-flag", "text": "See Section 4 for the escalation policy.", "must_flag": "AiTells.SectionCode"}
+{"id": "nevertag-flag", "text": "It reads as discipline, never confession.", "must_flag": "AiTells.NeverTag"}
+{"id": "epigram-flag", "text": "The composer is the hero, not a decoration.", "must_flag": "AiTells.EpigramContrast"}
+{"id": "negparallel-flag", "text": "It's not just a dashboard, it's a platform.", "must_flag": "AiTells.NegParallel"}
+{"id": "copula-flag", "text": "The report is a testament to our focus.", "must_flag": "AiTells.CopulaInflation"}
+{"id": "hiddenverb-flag", "text": "We will conduct an analysis of the data.", "must_flag": "AiTells.HiddenVerb"}
+{"id": "passive-flag", "text": "The feature was shipped by the team.", "must_flag": "AiTells.Passive"}
+{"id": "cliche-flag", "text": "This release is a game-changer.", "must_flag": "AiTells.Cliche"}
+{"id": "weakresume-flag", "text": "Responsible for the product vision.", "must_flag": "AiTells.WeakResume"}
+{"id": "virtuehonest-flag", "text": "Here is an honest update on the plan.", "must_flag": "AiTells.VirtueHonest"}
+{"id": "linktext-flag", "text": "Click here to read the docs.", "must_flag": "AiTells.LinkText"}
+{"id": "triad-flag", "text": "We value clarity, discipline, and trust.", "must_flag": "AiTells.AbstractTriad"}
+{"id": "adverb-flag", "text": "We simply shipped it.", "must_flag": "AiTells.Adverb"}
+{"id": "dash-clean", "text": "The launch is close. We ship on Friday.", "must_not_flag": "AiTells.Dash"}
+{"id": "nevertag-clean", "text": "The team built it to serve users, never to lock them in.", "must_not_flag": "AiTells.NeverTag"}
+{"id": "epigram-clean", "text": "The composer carries the piece.", "must_not_flag": "AiTells.EpigramContrast"}
+{"id": "filepath-clean", "text": "The steps live in the setup guide.", "must_not_flag": "AiTells.FilePath"}
+{"id": "passive-clean", "text": "The team shipped the feature.", "must_not_flag": "AiTells.Passive"}
+{"id": "virtuehonest-clean", "text": "Undercutting on price is the honest play here.", "must_not_flag": "AiTells.VirtueHonest"}

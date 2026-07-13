@@ -1,0 +1,24 @@
+{"id": "b01", "text": "It reads as discipline, never confession.", "expect": "flag", "check": "AiTells.NeverTag"}
+{"id": "b02", "text": "The composer is the hero, not a decoration.", "expect": "flag", "check": "AiTells.EpigramContrast"}
+{"id": "b03", "text": "This roadmap is a testament to the team's focus.", "expect": "flag", "check": "AiTells.CopulaInflation"}
+{"id": "b04", "text": "We value clarity, discipline, and trust.", "expect": "flag", "check": "AiTells.AbstractTriad"}
+{"id": "b05", "text": "It's not just a tool, it's a movement.", "expect": "flag", "check": "AiTells.NegParallel"}
+{"id": "b06", "text": "The plan ships Monday — no slippage.", "expect": "flag", "check": "AiTells.Dash"}
+{"id": "b07", "text": "The status is [AT RISK, RED] this week.", "expect": "flag", "check": "AiTells.StatusBracket"}
+{"id": "b08", "text": "Set MAX_CONNECTIONS before launch.", "expect": "flag", "check": "AiTells.CodeToken"}
+{"id": "b09", "text": "We will conduct an evaluation of the metrics.", "expect": "flag", "check": "AiTells.HiddenVerb"}
+{"id": "b10", "text": "Here is an honest take on the delay.", "expect": "flag", "check": "AiTells.VirtueHonest"}
+{"id": "b11", "text": "The dashboard was designed by the growth team.", "expect": "flag", "check": "AiTells.Passive"}
+{"id": "b12", "text": "This is best-in-class tooling.", "expect": "flag", "check": "AiTells.Cliche"}
+{"id": "b13", "text": "Worked on the onboarding flow.", "expect": "flag", "check": "AiTells.WeakResume"}
+{"id": "b14", "text": "The details are in reports/q3-summary.md.", "expect": "flag", "check": "AiTells.FilePath"}
+{"id": "c01", "text": "Our internal self-critique stays in the notes.", "expect": "clean", "check": "AiTells.NeverTag"}
+{"id": "c02", "text": "The composer carries the piece.", "expect": "clean", "check": "AiTells.EpigramContrast"}
+{"id": "c03", "text": "This roadmap shows the team's focus.", "expect": "clean", "check": "AiTells.CopulaInflation"}
+{"id": "c04", "text": "We ship clear, plain writing.", "expect": "clean", "check": "AiTells.AbstractTriad"}
+{"id": "c05", "text": "It is a movement, well beyond a single tool.", "expect": "clean", "check": "AiTells.NegParallel"}
+{"id": "c06", "text": "The plan ships Monday with no slippage.", "expect": "clean", "check": "AiTells.Dash"}
+{"id": "c07", "text": "The status is at risk this week.", "expect": "clean", "check": "AiTells.StatusBracket"}
+{"id": "c08", "text": "Set the connection limit before launch.", "expect": "clean", "check": "AiTells.CodeToken"}
+{"id": "c09", "text": "We will review the metrics.", "expect": "clean", "check": "AiTells.HiddenVerb"}
+{"id": "c10", "text": "Cutting scope is the honest play here.", "expect": "clean", "check": "AiTells.VirtueHonest"}

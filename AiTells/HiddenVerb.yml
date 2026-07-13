@@ -1,0 +1,7 @@
+extends: existence
+message: "Hidden verb '%s': use the direct verb (analyze, not conduct an analysis)."
+level: suggestion
+ignorecase: true
+raw:
+  - '\b(?:conduct|perform|provide|make|undertake|engage in|carry out)\s+'
+  - '(?:a|an|the)?\s*\w+(?:tion|sion|ment|ance|sis)\b'

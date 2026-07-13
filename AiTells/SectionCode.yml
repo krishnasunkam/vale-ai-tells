@@ -1,0 +1,7 @@
+extends: existence
+message: "Section/source code '%s' in prose: name it, do not cite a code."
+level: error
+ignorecase: true
+raw:
+  - '(?:§|\bsec(?:tion)?\.?\s?)\s?\d+'
+  - '|[\[(]S\d{1,3}[\])]'

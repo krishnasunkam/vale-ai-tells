@@ -1,0 +1,22 @@
+extends: existence
+message: "Cliche '%s': cut it or say the literal thing."
+level: suggestion
+ignorecase: true
+tokens:
+  - 'game[ -]changer'
+  - 'at the end of the day'
+  - 'in a nutshell'
+  - 'low-hanging fruit'
+  - 'move the needle'
+  - 'paradigm shift'
+  - 'thought leader'
+  - 'best-in-class'
+  - 'cutting-edge'
+  - 'state-of-the-art'
+  - 'tip of the iceberg'
+  - 'win-win'
+  - 'secret sauce'
+  - 'double-edged sword'
+  - 'perfect storm'
+  - 'in today[''’]?s fast-paced world'
+  - 'in the ever-evolving landscape'

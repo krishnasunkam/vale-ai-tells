@@ -1,0 +1,7 @@
+extends: existence
+message: "Em/en dash: recast with a period, comma, colon, or 'to' for a range."
+level: error
+nonword: true
+tokens:
+  - '—'
+  - '–'

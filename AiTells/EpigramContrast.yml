@@ -1,0 +1,8 @@
+extends: existence
+message: "Epigram contrast '%s': cut the negated half; the positive claim is stronger."
+level: suggestion
+ignorecase: true
+raw:
+  - '\b(?:is|are|was|were|reads?\s+as|stays?|remains?|becomes?)\s+'
+  - '(?:a\s+|an\s+|the\s+)?[\w’''-]+(?:\s+[\w’''-]+){0,2}'
+  - ',\s+not\s+(?:a\s+|an\s+|the\s+)?[\w’''-]+'

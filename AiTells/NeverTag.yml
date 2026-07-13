@@ -1,0 +1,9 @@
+extends: existence
+message: "', never X' antithesis tag: state the behavior once and stop."
+level: error
+# RE2 has no lookahead, so the head word after "never" is guarded to reject the bare
+# word "to": ", never to stay neutral" (a legit infinitive) must not fire, while
+# ", never the account number itself" (the flourish) must. The guard matches any word
+# except a standalone "to".
+raw:
+  - ',\s+never\s+(?:a\s+|an\s+|the\s+|as\s+)?(?:[^t\s][\w’''-]*|t[^o\s][\w’''-]*|to[\w’''-]+)(?:\s+[\w’''-]+){0,3}'

@@ -1,0 +1,8 @@
+extends: existence
+message: "Abstract-noun triad '%s': name one concrete thing instead of three abstractions."
+level: suggestion
+ignorecase: true
+raw:
+  - '\b(?:[a-z-]+(?:ity|ness|tion|sion|ance|ence|ism|ship|ility)|trust|rigor|clarity|calm|craft|care|focus|discipline|taste|speed|scale|intent|judgment|courage|candor|warmth|depth|proof)'
+  - ',\s+(?:[a-z-]+(?:ity|ness|tion|sion|ance|ence|ism|ship|ility)|trust|rigor|clarity|calm|craft|care|focus|discipline|taste|speed|scale|intent|judgment|courage|candor|warmth|depth|proof)'
+  - ',?\s+and\s+(?:[a-z-]+(?:ity|ness|tion|sion|ance|ence|ism|ship|ility)|trust|rigor|clarity|calm|craft|care|focus|discipline|taste|speed|scale|intent|judgment|courage|candor|warmth|depth|proof)\b'
