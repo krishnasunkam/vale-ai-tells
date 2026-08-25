@@ -48,7 +48,19 @@ repo you own:
 mkdir -p styles && cp -R /path/to/vale-ai-tells/AiTells styles/
 ```
 
-Then add the package to your `.vale.ini`:
+Or skip the copy: point Vale straight at the release zip in your `.vale.ini`:
+
+```ini
+StylesPath = styles
+Packages = https://github.com/krishnasunkam/vale-ai-tells/releases/latest/download/AiTells.zip
+
+[*.{md,markdown,txt}]
+BasedOnStyles = AiTells
+```
+
+Then `vale sync` pulls the rules for you.
+
+If you copied the folder by hand instead, add the package to your `.vale.ini`:
 
 ```ini
 StylesPath = styles
