@@ -4,13 +4,51 @@ A [Vale](https://vale.sh) style-package that flags the tells of AI-written and s
 
 Modern writing tools make it easy to produce text that reads like a machine wrote it. That prose has a fingerprint: the em dash, the epigram (`is the hero, not a decoration`), the antithesis flourish (`reads as discipline, never confession`), the virtue tag (`done right`), the abstract-noun triad (`clarity, discipline, and trust`). AiTells names each one where it appears, in Markdown, HTML, or plain text, entirely on your own machine. It does not rewrite for you. It marks the tell so you fix it yourself.
 
-## Install
+## Try it on your own prose, in one command
+
+> **You need:** macOS or Linux · [Vale](https://vale.sh) (`brew install vale`) · python3
+> (ships with macOS). Under a minute, all of it on your machine.
 
 ```bash
-brew install vale            # macOS; see vale.sh for other platforms
+git clone https://github.com/krishnasunkam/vale-ai-tells.git
+cd vale-ai-tells && ./checkmyprose.sh ~/path/to/your-doc.md
 ```
 
-Add the package to your `.vale.ini`:
+```
+   ╭─ ✦ c h e c k m y p r o s e
+   │  the tells of machine-written text, found in yours
+   ╰─────────────────────────────────────
+
+   reading your prose… (it stays on this machine)
+
+   22 tells across 1 file — 6 mechanical (fix always), 16 judgment calls
+
+   your fingerprint:
+     · Adverb          ×3   “quietly”
+     · LinkText        ×2   “This page”
+     · Cliche          ×2   “game-changer”
+     · Passive         ×2   “was shipped”
+     · …and 12 more rules fired
+
+   most flagged: your-doc.md (22 tells)
+   verdict: reads machine-drafted — worth a real rewrite.
+
+   your prose never left your machine.
+```
+
+No arguments? It checks the markdown it finds nearby. The transcript above is a real run
+against `examples/ai-prose.md`.
+
+## Afterwards
+
+The clone is disposable: the fingerprint is the product. To make the rules part of a
+repo you own:
+
+```bash
+mkdir -p styles && cp -R /path/to/vale-ai-tells/AiTells styles/
+```
+
+Then add the package to your `.vale.ini`:
 
 ```ini
 StylesPath = styles
@@ -26,6 +64,12 @@ Then sync and lint:
 vale sync
 vale your-doc.md
 ```
+
+## Use as a Claude Code skill
+
+Point Claude Code (or a compatible agent) at this repo and ask it to check your prose.
+[`SKILL.md`](SKILL.md) has the agent run the linter, read the findings back as a table,
+and offer recasts one at a time in your voice. It marks tells; it never bulk-rewrites.
 
 ## What it catches
 

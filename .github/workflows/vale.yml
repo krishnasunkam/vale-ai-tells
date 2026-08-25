@@ -22,8 +22,11 @@ jobs:
       - name: Rule fixtures must stay green
         run: python3 tests/run_tests.py
 
+      - name: Packaging gate (skill assets, script, reveal)
+        run: python3 tests/test_packaging.py
+
       - name: Mini-bench must hold recall and zero false fires
         run: python3 bench/score.py
 
       - name: Our own docs must pass our own linter
-        run: vale README.md CONTRIBUTING.md
+        run: vale README.md CONTRIBUTING.md SKILL.md
